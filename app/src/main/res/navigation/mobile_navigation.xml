@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.effit.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_plan"
+            app:destination="@id/navigation_plan" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_noteListingFragment"
+            app:destination="@id/noteListingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/signInFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="cardio"
+            app:argType="com.example.effit.data.model.Video" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_plan"
+        android:name="com.example.effit.ui.plan.PlanFragment"
+        android:label="@string/title_plan"
+        tools:layout="@layout/fragment_plan" >
+        <action
+            android:id="@+id/action_navigation_plan_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_plan_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_plan_to_noteListingFragment"
+            app:destination="@id/noteListingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.effit.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_plan"
+            app:destination="@id/navigation_plan" />
+        <action
+            android:id="@+id/action_navigation_profile_to_noteListingFragment"
+            app:destination="@id/noteListingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteListingFragment"
+        android:name="com.example.effit.ui.note.NoteListingFragment"
+        android:label="fragment_note_listing"
+        tools:layout="@layout/fragment_note_listing" >
+        <action
+            android:id="@+id/action_noteListingFragment_to_noteDetailFragment"
+            app:destination="@id/noteDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteDetailFragment"
+        android:name="com.example.effit.ui.note.NoteDetailFragment"
+        android:label="fragment_note_detail"
+        tools:layout="@layout/fragment_note_detail" />
+</navigation>

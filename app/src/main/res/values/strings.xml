@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Effit</string>
+    <string name="main_small">main_small</string>
+    <string name="main_large">main_large</string>
+    <string name="main_large1">TODO</string>
+    <string name="login_button">Войти</string>
+    <string name="test">test</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="sign_up_text">Регистрация</string>
+    <string name="sign_up_button">Зарегистрироваться</string>
+    <string name="sign_in">У меня уже есть аккаунт</string>
+    <string name="sign_in_button">Войти</string>
+    <string name="restore_password">Забыли пароль?</string>
+    <string name="nickname">Никнейм</string>
+    <string name="password">Пароль</string>
+    <string name="email">E-mail</string>
+    <string name="politics">Я прочитал Политику конфиденциальности</string>
+    <string name="name">Имя</string>
+    <string name="weight">Вес</string>
+    <string name="height">Рост</string>
+    <string name="age">Возраст</string>
+    <string name="error_field">Заполните все необходимые поля</string>
+    <string name="home"></string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Пароль должен быть длиннее 6 символов</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_plan" />
+    <string name="title_profile" />
+    <string name="note_item_desc_placholder">In this chapter, you’re going to learn about the different types of subjects in RxJava, see how to work with each one and why you might choose one over another based on some common use cases.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="invalid_email">Неверный формат email</string>
+    <string name="enter_email">Введите email</string>
+    <string name="enter_first_name">Введите имя</string>
+    <string name="enter_name">Введите имя</string>
+    <string name="enter_height">Введите рост</string>
+    <string name="enter_weight">Введите вес</string>
+    <string name="enter_age">Введите возраст</string>
+    <string name="restore_pass">Восстановление пароля</string>
+    <string name="send_email">Отправить</string>
+    <string name="text_cardio">Кардио тренировки</string>
+    <string name="text_buttocks">Ягодицы</string>
+    <string name="profile">Профиль</string>
+    <string name="save">Сохранить</string>
+    <string name="discard">Отменить</string>
+    <string name="error_tag_text">Введите текст</string>
+    <string name="error_title">Введите название</string>
+    <string name="error_description">Введите описание</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "295084576594",
+    "project_id": "effit-db8e1",
+    "storage_bucket": "effit-db8e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295084576594:android:0a5834e270273b5cf5348b",
+        "android_client_info": {
+          "package_name": "com.example.effit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295084576594-fmpttfrqc3j2gatrlbs4phuhiq5k10ra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmtJJQ9nwo-st7zxtMqyRKcDTETAHaRnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295084576594-fmpttfrqc3j2gatrlbs4phuhiq5k10ra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

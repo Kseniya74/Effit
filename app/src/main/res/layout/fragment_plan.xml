@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        tools:context=".ui.plan.PlanFragment"
+        android:background="@color/main">
+
+    <!--    <com.google.android.exoplayer2.ui.PlayerView-->
+    <!--        android:id="@+id/videos"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="720dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/nav_view"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--    </com.google.android.exoplayer2.ui.PlayerView>-->
+
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundTint="@color/main"
+            android:text="Здесь будут отображаться добавленные видео"
+            android:fontFamily="@font/avenirnextcyr_medium"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/avenirnextcyr_medium"
+            android:foregroundTint="@color/main"
+            android:gravity="center"
+            android:text="Добавленные видео"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="340dp"
+            android:layout_height="204dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="247dp"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <WebView
+                android:id="@+id/web_view_cardio"
+                android:layout_width="355dp"
+                android:layout_height="219dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.cardview.widget.CardView>
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cardView4"-->
+<!--            android:layout_width="340dp"-->
+<!--            android:layout_height="204dp"-->
+<!--            android:layout_marginTop="200dp"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:visibility="invisible"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <WebView-->
+<!--                android:id="@+id/web_view_abs"-->
+<!--                android:layout_width="355dp"-->
+<!--                android:layout_height="219dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:visibility="invisible"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cardView3"-->
+<!--            android:layout_width="340dp"-->
+<!--            android:layout_height="204dp"-->
+<!--            android:layout_marginBottom="300dp"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:visibility="invisible"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <WebView-->
+<!--                android:id="@+id/web_view_buttocks"-->
+<!--                android:layout_width="355dp"-->
+<!--                android:layout_height="219dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:visibility="invisible"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cardView5"-->
+<!--            android:layout_width="340dp"-->
+<!--            android:layout_height="204dp"-->
+<!--            android:layout_marginTop="700dp"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:visibility="invisible"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <WebView-->
+<!--                android:id="@+id/web_view_upper"-->
+<!--                android:layout_width="355dp"-->
+<!--                android:layout_height="219dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:visibility="invisible"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main"
+            app:itemIconTint="@color/button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

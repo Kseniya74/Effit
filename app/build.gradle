@@ -1,0 +1,102 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'com.google.dagger.hilt.android'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+apply plugin: 'dagger.hilt.android.plugin'
+
+kapt {
+    correctErrorTypes true
+}
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+        applicationId "com.example.effit"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.1"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    compileSdkVersion 33
+    namespace 'com.example.effit'
+}
+
+dependencies {
+
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+    implementation 'com.google.firebase:firebase-database:20.2.2'
+    implementation 'com.google.firebase:firebase-firestore:24.6.1'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.2.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.2.2'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4"
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
+//    implementation('com.google.apis:google-api-services-youtube:v3-rev183-1.22.0') {
+//        exclude group: 'org.apache.httpcomponents'
+//    }
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.7'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.18.7'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.18.7'
+
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    implementation 'com.google.dagger:hilt-android:2.46.1'
+    kapt 'com.google.dagger:hilt-android-compiler:2.46.1'
+
+    kapt("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.5.0")
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'androidx.room:room-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.room:room-runtime:2.5.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.annotation:annotation:1.6.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    kapt 'androidx.room:room-compiler:2.5.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    testImplementation 'junit:junit:'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
